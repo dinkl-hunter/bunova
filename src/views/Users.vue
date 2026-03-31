@@ -2,7 +2,7 @@
   <div class="users">
     <div class="users-container">
       <h2 class="title">ПОЛЬЗОВАТЕЛИ</h2>
-      
+
       <table class="users-table">
         <thead>
           <tr>
@@ -54,7 +54,7 @@ const users = ref([
     name: 'Иванов И.И.',
     status: 'active',
     statusText: 'Активен',
-    lastActive: 'Сегодня, 14:30'
+    lastActive: 'Сегодня, 14:30',
   },
   {
     id: 2,
@@ -62,8 +62,8 @@ const users = ref([
     name: 'Петров П.П.',
     status: 'active',
     statusText: 'Активен',
-    lastActive: 'Сегодня, 13:15'
-  }
+    lastActive: 'Сегодня, 13:15',
+  },
 ])
 
 const goBack = () => {
@@ -76,13 +76,14 @@ const goBack = () => {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  font-size: 28px;
 }
 
 .users-container {
   background: white;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .title {
@@ -111,14 +112,14 @@ const goBack = () => {
   font-weight: 700;
   color: #1a1a2e;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 25px;
 }
 
 .status {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -134,7 +135,7 @@ const goBack = () => {
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 25px;
   transition: 0.3s;
 }
 
@@ -154,7 +155,7 @@ const goBack = () => {
   padding: 12px 24px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -174,7 +175,7 @@ const goBack = () => {
   border: none;
   padding: 14px 32px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;

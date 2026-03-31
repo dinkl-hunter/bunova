@@ -9,7 +9,7 @@
 
       <button class="menu-card" @click="goTo('/protocols')">
         <div class="card-icon">📊</div>
-        <h3>ИСТОРИЯ ИЗМЕРЕНИЙ</h3>
+        <h3>МОНИТОРИНГ ПРОТОКОЛОВ</h3>
         <p>Просмотр всех протоколов измерений</p>
       </button>
 
@@ -62,7 +62,7 @@ const goTo = (path) => {
   border: none;
   padding: 40px 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.3s;
   text-align: center;
@@ -70,7 +70,7 @@ const goTo = (path) => {
 
 .menu-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0,123,255,0.15);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.15);
 }
 
 .card-icon {
@@ -81,13 +81,13 @@ const goTo = (path) => {
 .menu-card h3 {
   color: #1a1a2e;
   margin: 0 0 10px 0;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .menu-card p {
   color: #666;
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
 }
 </style>

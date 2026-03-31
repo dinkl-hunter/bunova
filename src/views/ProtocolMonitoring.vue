@@ -2,7 +2,7 @@
   <div class="protocol-monitoring">
     <div class="table-container">
       <h2 class="title">МОНИТОРИНГ ПРОТОКОЛОВ</h2>
-      
+
       <table class="data-table">
         <thead>
           <tr>
@@ -26,9 +26,7 @@
             </td>
             <td>{{ protocol.date }}</td>
             <td>
-              <button class="btn-view" @click="viewResult(protocol.id)">
-                👁 Просмотр
-              </button>
+              <button class="btn-view" @click="viewResult(protocol.id)">👁 Просмотр</button>
             </td>
           </tr>
         </tbody>
@@ -36,9 +34,7 @@
     </div>
 
     <div class="actions">
-      <button class="btn-menu" @click="goBack">
-        ← МЕНЮ
-      </button>
+      <button class="btn-menu" @click="goBack">← МЕНЮ</button>
     </div>
   </div>
 </template>
@@ -52,20 +48,20 @@ const router = useRouter()
 const protocols = ref([
   {
     id: 1,
-    material: 'Щебень',
+    material: 'Цинк',
     executor: 'Иванов И.И.',
     status: 'completed',
     statusText: 'ВЫПОЛНЕНО',
-    date: '25.03.2026'
+    date: '25.03.2026',
   },
   {
     id: 2,
-    material: 'Песок',
+    material: 'Цинк',
     executor: 'Петров П.П.',
     status: 'in-progress',
     statusText: 'В ПРОЦЕССЕ',
-    date: '25.03.2026'
-  }
+    date: '25.03.2026',
+  },
 ])
 
 const goBack = () => {
@@ -88,7 +84,7 @@ const viewResult = (id) => {
   background: white;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .title {
@@ -108,6 +104,7 @@ const viewResult = (id) => {
 .data-table td {
   padding: 14px 16px;
   text-align: left;
+  font-size: 25px;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -116,7 +113,7 @@ const viewResult = (id) => {
   font-weight: 700;
   color: #1a1a2e;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 30px;
 }
 
 .data-table tbody tr:hover {
@@ -127,7 +124,7 @@ const viewResult = (id) => {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -148,7 +145,7 @@ const viewResult = (id) => {
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 25px;
   transition: 0.3s;
 }
 
@@ -167,7 +164,7 @@ const viewResult = (id) => {
   border: none;
   padding: 14px 32px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;

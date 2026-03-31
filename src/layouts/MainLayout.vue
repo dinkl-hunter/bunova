@@ -2,31 +2,17 @@
   <div class="layout">
     <aside class="sidebar">
       <div class="logo">WEIGHT VISION</div>
-      
+
       <nav class="nav">
-        <RouterLink to="/" class="nav-item">
-           Главное меню
-        </RouterLink>
-        <RouterLink to="/operator" class="nav-item">
-          👨‍ Панель оператора
-        </RouterLink>
-        <RouterLink to="/protocols" class="nav-item">
-          📊 История измерений
-        </RouterLink>
-        <RouterLink to="/reports" class="nav-item">
-          📈 Отчёты
-        </RouterLink>
-        <RouterLink to="/users" class="nav-item">
-          👥 Пользователи
-        </RouterLink>
-        <RouterLink to="/settings" class="nav-item">
-          ⚙️ Настройки
-        </RouterLink>
+        <RouterLink to="/" class="nav-item"> Главное меню </RouterLink>
+        <RouterLink to="/operator" class="nav-item"> 👨‍ Панель оператора </RouterLink>
+        <RouterLink to="/protocols" class="nav-item"> 📊 История измерений </RouterLink>
+        <RouterLink to="/reports" class="nav-item"> 📈 Отчёты </RouterLink>
+        <RouterLink to="/users" class="nav-item"> 👥 Пользователи </RouterLink>
+        <RouterLink to="/settings" class="nav-item"> ⚙️ Настройки </RouterLink>
       </nav>
 
-      <button class="logout-btn" @click="logout">
-        🚪 Выйти
-      </button>
+      <button class="logout-btn" @click="logout">🚪 Выйти</button>
     </aside>
 
     <main class="content">
@@ -36,7 +22,7 @@
           <span>Оператор: Иванов И.И.</span>
         </div>
       </header>
-      
+
       <div class="page-content">
         <RouterView />
       </div>
@@ -60,7 +46,7 @@ const pageTitle = computed(() => {
     '/users': 'Пользователи',
     '/settings': 'Настройки',
     '/graphs': 'Графики',
-    '/calibration': 'Калибровка камер'
+    '/calibration': 'Калибровка камер',
   }
   return titles[route.path] || 'WeightVision'
 })
@@ -92,7 +78,7 @@ const logout = () => {
   text-align: center;
   margin-bottom: 40px;
   padding: 16px;
-  background: #16213e;
+  background: #620779;
   border-radius: 12px;
   letter-spacing: 1px;
 }
@@ -109,7 +95,7 @@ const logout = () => {
   text-decoration: none;
   border-radius: 10px;
   transition: all 0.3s;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .nav-item:hover {
@@ -118,8 +104,8 @@ const logout = () => {
 }
 
 .nav-item.router-link-active {
-  background: #007bff;
-  color: white;
+  background: #ff0077;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -130,7 +116,7 @@ const logout = () => {
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
@@ -147,14 +133,14 @@ const logout = () => {
 .topbar {
   background: white;
   padding: 20px 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .topbar h2 {
-  font-size: 24px;
+  font-size: 25px;
   color: #1a1a2e;
   margin: 0;
 }

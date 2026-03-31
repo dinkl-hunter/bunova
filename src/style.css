@@ -26,7 +26,12 @@ body {
   letter-spacing: 0.5px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: 'Luckiest Guy', cursive, sans-serif;
   font-weight: 400;
@@ -41,7 +46,9 @@ button {
   letter-spacing: 1px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   font-family: 'Luckiest Guy', cursive, sans-serif;
   letter-spacing: 0.5px;
   color: #1a1a2e;
@@ -104,7 +111,7 @@ a {
   border: 2px solid #e0e0e0;
   border-radius: 12px;
   padding: 32px 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .summary-card h4 {
@@ -127,8 +134,8 @@ a {
 /* ========================================
    ЗАГОЛОВКИ
    ======================================== */
-h1.title, 
-h2.title, 
+h1.title,
+h2.title,
 .panel-title,
 .title {
   color: #1a1a2e;
@@ -138,7 +145,9 @@ h2.title,
 /* ========================================
    ТАБЛИЦЫ
    ======================================== */
-table, th, td {
+table,
+th,
+td {
   letter-spacing: 0.5px;
   line-height: 1.6;
   font-weight: 400;
@@ -195,7 +204,7 @@ table td {
   background: #ffffff;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border: 1px solid #e0e0e0;
 }
 
@@ -233,4 +242,26 @@ table td {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+/* ========================================
+   УБИРАЕМ СВЕЧЕНИЕ У ТЕКСТА В САЙДБАРЕ
+   ======================================== */
+.sidebar .nav-item,
+.sidebar .logo {
+  text-shadow: none !important;
+  -webkit-text-stroke: 0px !important;
+}
 
+.sidebar .nav-item:focus,
+.sidebar .nav-item:active,
+.sidebar .nav-item:focus-visible,
+.sidebar .nav-item:hover {
+  text-shadow: none !important;
+  -webkit-text-stroke: 0px !important;
+  outline: none !important;
+}
+
+/* Если нужно убрать только у активного пункта */
+.sidebar .nav-item.router-link-active {
+  text-shadow: none !important;
+  -webkit-text-stroke: 0px !important;
+}
